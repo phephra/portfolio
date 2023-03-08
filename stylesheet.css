@@ -851,8 +851,13 @@ a img {
         grid-template-columns: 1fr;
         margin: 0;
         padding-top: 2rem;
+        padding-left: 1rem;
         width: 100%;
         position: relative;
+    }
+
+    .bio-text a {
+        text-decoration: underline;
     }
 
     .project-about {
