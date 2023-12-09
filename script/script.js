@@ -1,4 +1,5 @@
     $(document).ready(function () {
+
         $(function () {
             $('body').removeClass('fade-out');
         });
@@ -17,6 +18,21 @@
         $(function () {
             removeit();
         });
+        // Initialize Masonry
+        var $grid = $('.grid').masonry({
+            itemSelector: '.grid-item-a',
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            transitionDuration: '0.2s',
+            stagger: '0.03s',
+            horizontalOrder: true,
+            percentPosition: true,
+            fitWidth: true
+        });
+        // layout Masonry after each image loads
+            $grid.imagesLoaded().progress( function() {
+            $grid.masonry('layout');
+        });       
     });
 
     function openNav() {
@@ -32,3 +48,5 @@
     window.onload = function () {
         document.getElementById('loading-mask').style.display = 'none';
     }
+
+

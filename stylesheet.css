@@ -6,6 +6,11 @@
 }
 
 @font-face {
+    font-family: "Sans-Bold";
+    src: url("fonts/HKGrotesk-Bold.otf");
+}
+
+@font-face {
     font-family: "Mono";
     src: url("fonts/NectoMono-Regular.otf");
 }
@@ -112,32 +117,33 @@ header ul li a {
 }
 
 ul#navi li {
-    padding: 1.5rem 2rem 2rem 2.5rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
     font-family: "Sans-Regular", sans-serif;
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: black;
 }
 
 ul#navi .phephra {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 50;
-}
-
-ul#navi .about {
-    position: fixed;
-    top: 0;
-    left: 45%;
-    z-index: 50;
+    float: left;
+    font-family: "Sans-Bold", sans-serif;
+    font-weight: 600;
+    padding-left: 2.5rem;
 }
 
 ul#navi .work {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 50;
+    float: left;
+}
+
+ul#navi .about {
+    float: right;
+    padding-right: 0rem;
+}
+
+ul#navi .instagram {
+    float: right;
+    padding-right: 3rem;
 }
 
 ul#navi a:hover {
@@ -149,7 +155,7 @@ ul#navi a:hover {
 
 .main-wrapper {
     position: relative;
-    padding-top: 6rem;
+    padding-top: 8rem;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 0rem;
@@ -218,32 +224,29 @@ ul#navi a:hover {
 
 /* FOOTER STYLES */
 
-.foot {
+footer {
     position: relative;
     display: block;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    height: 2rem;
+}
+
+.foot {
     width: 100%;
-    z-index: 50 !important;
+    background-color: #ffffff;
 }
 
 footer ul {
-    display: inline-block;
+    display: block;
+    padding-bottom: 1.5rem;
 }
 
 footer li.footer-back {
-    position: absolute;
-    left: 2rem;
-    bottom: 2rem;
+    float: left;
+    padding-left: 2rem;
 }
 
 footer li.footer-contact {
-    position: absolute;
-    right: 2rem;
-    bottom: 2rem;
+    float: right;
+    padding-right: 2rem;
 }
 
 footer li a {
@@ -330,6 +333,26 @@ footer li a:hover {
     position: relative;
 }
 
+.grid {
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
+.grid-item-a { 
+    width: 32.6%;
+    margin-bottom: 1%;
+}
+
+.grid-sizer {
+    width: 32.6%;
+}
+
+.gutter-sizer {
+    width: 1%;
+}
+
 /* IMAGES STYLE */
 
 .thumb-img {
@@ -337,6 +360,7 @@ footer li a:hover {
     height: auto;
     vertical-align: top;
     z-index: 1;
+    border-radius: 15px;
 }
 
 .thumb-img-hover {
@@ -344,6 +368,7 @@ footer li a:hover {
     height: auto;
     vertical-align: top;
     z-index: 1;
+    border-radius: 15px;
 }
 
 .overlay {
@@ -356,6 +381,7 @@ footer li a:hover {
     top: 0;
     left: 0;
     z-index: 999;
+    border-radius: 15px;
 }
 
 .thumb-img:hover .overlay {
@@ -366,6 +392,13 @@ footer li a:hover {
     width: 100%;
     display: block;
     overflow: hidden;
+}
+
+.grid-img {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    border-radius: 15px;
 }
 
 /* VIDEO STYLES */
@@ -958,6 +991,19 @@ a img {
         margin-bottom: 2rem;
     }
 
+    .grid {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin: 0 auto;
+    }
+
+    .grid-sizer {
+        width: 95%;
+    }
+    .grid-item-a {
+        width: 100%;
+    }
+
     .page-img {
         width: 100%;
         height: auto;
@@ -965,7 +1011,7 @@ a img {
         margin-bottom: 1rem;
         border: transparent;
     }
-
+    
     .videoembed {
         width: 100%;
         height: 34vh;
@@ -1038,6 +1084,7 @@ a img {
         border: transparent;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        border-radius: 15px;
     }
 
     .thumb-img-hover {
