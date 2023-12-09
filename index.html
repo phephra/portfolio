@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Eczar:400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,29 +14,32 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--Link a file degli script-->
-    <script src="script/script.js"></script>
+    <script src="/script/script.js"></script>
+    <!-- Masonry -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <!--Images loaded-->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
     <title>Alessandro Ferrari</title>
 </head>
 <body>
     <script>
         document.body.className += ' fade-out';
     </script>
-    <!-- HEADER -->
+     <!-- HEADER -->
     <header>
         <nav id="myTopnav">
             <ul id="navi" class="topnav">
                 <li class="phephra">
-                    <a href="index.html">alessandro ferrari</a>
+                    <a href="/">alessandro ferrari</a>
                 </li>
                 <li class="work">
-                    <a href="index.html">design</a>
+                    <a href="/">design</a>
                 </li>
                 <li class="work">
-                    <a href="illustration.html">illustration</a>
+                    <a href="/illustration/">illustration</a>
                 </li>
                 <li class="work">
-                    <a href="about.html">about</a>
+                    <a href="/about/">about</a>
                 </li>
                 <li class="instagram">
                     <a href="https://www.instagram.com/_phephra/">instagram</a>
@@ -49,9 +52,9 @@
             <div class="topnav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="mobile-link-list">
-                    <a href="index.html" class="mobile-link">design</a>
-                    <a href="illustration.html" class="mobile-link">illustration</a>
-                    <a href="about.html" class="mobile-link">about</a>
+                    <a href="/" class="mobile-link">design</a>
+                    <a href="/illustration/" class="mobile-link">illustration</a>
+                    <a href="/about/" class="mobile-link">about</a>
                     <a href="https://www.instagram.com/_phephra/" class="mobile-link">instagram</a>
                     <a href="mailto:aleferrarss@gmail.com?Subject=Hello" target="_top" class="mobile-link">contact</a>
                 </div>
@@ -62,10 +65,10 @@
     <section class="main-wrapper">
         <!--PARTITURA LUDICA-->
         <div class="m-a" id="partituraludica">
-            <a href="prj_partituraludica.html">
-                <img src="img/PL/PL_cover.jpg" alt="fiddol" class="thumb-img">
+            <a href="design/PartituraLudica/">
+                <img src="/img/PL/PL_cover.jpg" alt="fiddol" class="thumb-img">
                 <div class="overlay">
-                    <img src="img/PL/PL_cover.jpg" alt="" class="thumb-img-hover">
+                    <img src="/img/PL/PL_cover.jpg" alt="" class="thumb-img-hover">
                     <div class="index-project">Partitura Ludica</div>
                     <div class="type-text">research / editorial design</div>
                     <div class="info-text">2020</div>
@@ -75,11 +78,11 @@
         </div> 
         <!--FIDDOL-->
         <div class="m-b" id="fiddol">
-            <a href="prj_fiddol.html">
-                <img src="img/Fiddol/fiddol_cover.gif" alt="fiddol" class="thumb-img">
+            <a href="design/Fiddol/">
+                <img src="/img/Fiddol/fiddol_cover.gif" alt="fiddol" class="thumb-img">
                 <div class="overlay">
                     <video autoplay muted loop class="thumb-img-hover">
-                        <source src="img/Fiddol/fiddol_cover_hover.mp4" type="video/mp4">
+                        <source src="/img/Fiddol/fiddol_cover_hover.mp4" type="video/mp4">
                     </video>
                     <div class="index-project">Fiddol</div>
                     <div class="type-text">branding / ui / ux</div>
@@ -90,10 +93,10 @@
         </div>
         <!--DOT DOT DOT-->
         <div class="m-a" id="dot_dot_dot">
-            <a href="prj_dotdotdot.html">
-                <img src="img/Dotdotdot/cover_ddd.jpg" alt="" class="thumb-img">
+            <a href="design/DotDotDot/">
+                <img src="/img/Dotdotdot/cover_ddd.jpg" alt="" class="thumb-img">
                 <div class="overlay">
-                    <img src="img/Dotdotdot/ddd_showcase_cover.gif" alt="" class="thumb-img-hover">
+                    <img src="/img/Dotdotdot/ddd_showcase_cover.gif" alt="" class="thumb-img-hover">
                     <div class="index-project">Dot Dot Dot magazine</div>
                     <div class="type-text">editorial design</div>
                     <div class="info-text">2018</div>
@@ -103,11 +106,11 @@
         </div>
          <!--CLOS GAME-->
          <div class="m-b" id="clos-game">
-            <a href="prj_clos_canon.html">
-                <img src="img/Clos/clos_cover.jpg" class="thumb-img">
+            <a href="design/ClosGame/">
+                <img src="/img/Clos/clos_cover.jpg" class="thumb-img">
                 <div class="overlay">
                     <video autoplay muted loop class="thumb-img-hover">
-                        <source src="img/Clos/macchina-hover.mp4" type="video/mp4">
+                        <source src="/img/Clos/macchina-hover.mp4" type="video/mp4">
                     </video>
                     <div class="index-project">Clos — the arcade</div>
                     <div class="type-text">interaction design / ux</div>
@@ -118,10 +121,10 @@
         </div>
         <!-- THE BRAND MATRIX -->
         <div class="m-a" id="brand_matrix">
-            <a href="prj_brandmatrix.html">
-                <img src="img/Brandmatrix/front-cover.jpg" class="thumb-img">
+            <a href="design/BrandMatrix/">
+                <img src="/img/Brandmatrix/front-cover.jpg" class="thumb-img">
                 <div class="overlay">
-                    <img src="img/Brandmatrix/bm_case.gif" alt="" class="thumb-img-hover">
+                    <img src="/img/Brandmatrix/bm_case.gif" alt="" class="thumb-img-hover">
                     <div class="index-project">The Brand Matrix</div>
                     <div class="type-text">editorial design</div>
                     <div class="info-text">2017</div>
@@ -131,10 +134,10 @@
         </div>
         <!--CLOS-->
         <div class="m-b" id="clos">
-            <a href="prj_clos.html">
-                <img src="img/Clos/0_cover.jpg" class="thumb-img">
+            <a href="design/Clos/">
+                <img src="/img/Clos/0_cover.jpg" class="thumb-img">
                 <div class="overlay">
-                    <img src="img/Clos/clos-hover.gif" alt="" class="thumb-img-hover">
+                    <img src="/img/Clos/clos-hover.gif" alt="" class="thumb-img-hover">
                     <div class="index-project">Clos</div>
                     <div class="type-text">branding</div>
                     <div class="info-text">2017</div>
@@ -144,10 +147,10 @@
         </div>
         <!--TYPE-->
         <div class="m-a" id="selected_type_works">
-            <a href="prj_type.html">
-                <img src="img/Type/cover_type.jpg" class="thumb-img">
+            <a href="design/TypeWorks/">
+                <img src="/img/Type/cover_type.jpg" class="thumb-img">
                 <div class="overlay">
-                    <img src="img/Type/cover.gif" alt="" class="thumb-img-hover">
+                    <img src="/img/Type/cover.gif" alt="" class="thumb-img-hover">
                     <div class="index-project">Selected Type Works</div>
                     <div class="type-text">graphic design</div>
                     <div class="info-text">2017</div>
@@ -157,9 +160,9 @@
         </div>
         <!--DARWIN-->
         <div class="m-b" id="darwin_-_the_illustrated_voyage_of_the_beagle">
-            <a href="prj_darwin.html"><img src="img/Darwin/darwin_cover.jpg" alt="" class="thumb-img">
+            <a href="design/DarwinGlobetrotter/"><img src="/img/Darwin/darwin_cover.jpg" alt="" class="thumb-img">
                 <div class="overlay">
-                    <img src="img/Darwin/darwin_cover_hover.gif" alt="" class="thumb-img-hover">
+                    <img src="/img/Darwin/darwin_cover_hover.gif" alt="" class="thumb-img-hover">
                     <div class="index-project">Darwin Giramondo</div>
                     <div class="type-text">illustration / editorial design</div>
                     <div class="info-text">2017</div>
