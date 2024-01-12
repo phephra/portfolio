@@ -392,6 +392,7 @@ footer li a:hover {
     width: 100%;
     display: block;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .grid-img {
