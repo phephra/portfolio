@@ -888,7 +888,9 @@ a img {
         grid-template-columns: 1fr;
         margin: 0;
         padding-top: 0rem;
-        margin-top: 1rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        padding-top: 1rem;
         width: 100%;
     }
 
@@ -905,7 +907,8 @@ a img {
         grid-template-columns: 1fr;
         margin: 0;
         padding-top: 2rem;
-        padding-left: 1rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
         width: 100%;
         position: relative;
     }
@@ -915,12 +918,11 @@ a img {
     }
 
     .project-about {
-        grid-column: 1;
         position: relative;
-        margin: 0 auto;
+        grid-column: 1;
         padding-top: 0;
-        padding-bottom: 2.5rem;
-        border: transparent;
+        padding-bottom: 0rem;
+        margin-bottom: 0rem;
     }
 
     .fix {
@@ -928,9 +930,10 @@ a img {
         width: 100%;
         top: 0;
         margin: 0 auto;
-        padding-left: 1.5rem;
-        padding-right: 2.5rem;
-        padding-bottom: 2.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0rem;
         margin-top: 1rem;
         overflow-y: auto;
     }
@@ -982,14 +985,14 @@ a img {
 
     .m-a {
         grid-column: 1;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .m-b {
         grid-column: 1;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .grid {
@@ -1008,9 +1011,10 @@ a img {
     .page-img {
         width: 100%;
         height: auto;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
         border: transparent;
+        border-radius: 10px;
     }
 
     .videoembed {
@@ -1046,8 +1050,8 @@ a img {
         font-size: 2.5rem;
         font-weight: 400;
         line-height: 3rem;
-        padding-top: 0;
-        padding-bottom: 1.2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0rem;
         margin-top: 0;
         width: 80%;
     }
@@ -1056,6 +1060,8 @@ a img {
         font-size: 1.1rem;
         font-weight: 400;
         line-height: 1.6rem;
+        padding-top: 0rem;
+        margin-top: 0;
     }
 
     .intro-text {
@@ -1071,6 +1077,7 @@ a img {
         font-size: 2rem;
         font-weight: 400;
         line-height: 2.6rem;
+        padding-top: 0rem;
     }
 
     .index-presentation {
@@ -1083,8 +1090,10 @@ a img {
     .thumb-img {
         width: 100%;
         border: transparent;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        padding-bottom: 0rem;
+        margin-bottom: 0rem;
         border-radius: 15px;
     }
 
