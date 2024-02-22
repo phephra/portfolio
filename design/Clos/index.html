@@ -25,31 +25,24 @@
     <script>
         document.body.className += ' fade-out';
     </script>
-     <!-- HEADER -->
+    <!-- HEADER -->
     <header>
-        <nav id="myTopnav">
-            <ul id="navi" class="topnav">
-                <li class="phephra">
-                    <a href="/">alessandro ferrari</a>
-                </li>
-                <li class="work">
-                    <a href="/">design</a>
-                </li>
-                <li class="work">
-                    <a href="/illustration/">illustration</a>
-                </li>
-                <li class="work">
-                    <a href="/about/">about</a>
-                </li>
-                <li class="instagram">
-                    <a href="https://www.instagram.com/_phephra/">instagram</a>
-                </li>
-            </ul>
+        <nav id="myTopnav" class=navbar>
+            <div class="navbar-container container">
+                <ul id="navi" class="menu-items">
+                    <li><a href="/">Design</a></li>
+                    <li><a href="/illustration/">Illustration</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+                <div class="phephra">
+                    <a href="/">Alessandro Ferrari</a>
+                </div>
+            </div>
         </nav>
         <!-- mobile -->
         <span class="mobile-menu" onclick="openNav()">&#9776;</span>
         <nav class="mobile-nav" id="myNav">
-            <div class="topnav">
+            <div class=navbar>
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="mobile-link-list">
                     <a href="/" class="mobile-link">design</a>
