@@ -26,11 +26,17 @@
         document.body.className += ' fade-out';
     </script>
      <!-- HEADER -->
-    <header>
+     <header>
         <nav id="myTopnav" class=navbar>
             <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
                 <ul id="navi" class="menu-items">
-                    <li><a href="/">Design</a></li>
+                    <li><a href="/design/">Design</a></li>
                     <li><a href="/illustration/">Illustration</a></li>
                     <li><a href="/about/">About</a></li>
                 </ul>
@@ -39,139 +45,22 @@
                 </div>
             </div>
         </nav>
-        <!-- mobile -->
-        <span class="mobile-menu" onclick="openNav()">&#9776;</span>
-        <nav class="mobile-nav" id="myNav">
-            <div class=navbar>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="mobile-link-list">
-                    <a href="/" class="mobile-link">design</a>
-                    <a href="/illustration/" class="mobile-link">illustration</a>
-                    <a href="/about/" class="mobile-link">about</a>
-                    <a href="https://www.instagram.com/_phephra/" class="mobile-link">instagram</a>
-                    <a href="mailto:aleferrarss@gmail.com?Subject=Hello" target="_top" class="mobile-link">contact</a>
-                </div>
-            </div>
-        </nav>
     </header>
     <!-- HOMEPAGE -->
-    <section class="main-wrapper">
-        <!--THE SESSION-->
-        <div class="m-a" id="thesession">
-            <a href="design/TheSession/">
-                <img src="/img/TheSession/TS_Cover.jpg" alt="the_session" class="thumb-img">
-                <div class="overlay">
-                    <img src="/img/TheSession/TS_Cover.jpg" alt="" class="thumb-img-hover">
-                    <div class="index-project">The Session</div>
-                    <div class="type-text">editorial design</div>
-                    <div class="info-text">2024</div>
-                    <div class="index-arrow">explore &#10230;</div>
-                </div>
-            </a>
-        </div> 
-        <!--PARTITURA LUDICA-->
-        <div class="m-b" id="partituraludica">
-            <a href="design/PartituraLudica/">
-                <img src="/img/PL/PL_cover.jpg" alt="fiddol" class="thumb-img">
-                <div class="overlay">
-                    <img src="/img/PL/PL_cover.jpg" alt="" class="thumb-img-hover">
-                    <div class="index-project">Partitura Ludica</div>
-                    <div class="type-text">research / editorial design</div>
-                    <div class="info-text">2020</div>
-                    <div class="index-arrow">explore &#10230;</div>
-                </div>
-            </a>
-        </div> 
-        <!--DOT DOT DOT-->
-        <div class="m-a" id="dot_dot_dot">
-            <a href="design/DotDotDot/">
-                <img src="/img/Dotdotdot/cover_ddd.jpg" alt="" class="thumb-img">
-                <div class="overlay">
-                    <img src="/img/Dotdotdot/ddd_showcase_cover.gif" alt="" class="thumb-img-hover">
-                    <div class="index-project">Dot Dot Dot magazine</div>
-                    <div class="type-text">editorial design</div>
-                    <div class="info-text">2018</div>
-                    <div class="index-arrow">explore &#10230;</div>
-                </div>
-            </a>
-        </div>
-        <!--FIDDOL-->
-        <div class="m-b" id="fiddol">
-            <a href="design/Fiddol/">
-                <img src="/img/Fiddol/fiddol_cover.gif" alt="fiddol" class="thumb-img">
-                <div class="overlay">
-                    <video autoplay muted loop class="thumb-img-hover">
-                        <source src="/img/Fiddol/fiddol_cover_hover.mp4" type="video/mp4">
-                    </video>
-                    <div class="index-project">Fiddol</div>
-                    <div class="type-text">branding / ui / ux</div>
-                    <div class="info-text">2018</div>
-                    <div class="index-arrow">explore &#10230;</div>
-                </div>
-            </a>
-        </div>
-         <!--CLOS GAME-->
-         <div class="m-a" id="clos-game">
-            <a href="design/ClosGame/">
-                <img src="/img/Clos/clos_cover.jpg" class="thumb-img">
-                <div class="overlay">
-                    <video autoplay muted loop class="thumb-img-hover">
-                        <source src="/img/Clos/macchina-hover.mp4" type="video/mp4">
-                    </video>
-                    <div class="index-project">Clos — the arcade</div>
-                    <div class="type-text">interaction design / ux</div>
-                    <div class="info-text">2017</div>
-                    <div class="index-arrow">explore &#10230;</div>
-                </div>
-            </a>
-        </div>
-        <!-- THE BRAND MATRIX -->
-        <div class="m-b" id="brand_matrix">
-            <a href="design/BrandMatrix/">
-                <img src="/img/Brandmatrix/front-cover.jpg" class="thumb-img">
-                <div class="overlay">
-                    <img src="/img/Brandmatrix/bm_case.gif" alt="" class="thumb-img-hover">
-                    <div class="index-project">The Brand Matrix</div>
-                    <div class="type-text">editorial design</div>
-                    <div class="info-text">2017</div>
-                    <div class="index-arrow">explore &#10230;</div>
-                </div>
-            </a>
-        </div>
-        <!--CLOS-->
-        <div class="m-a" id="clos">
-            <a href="design/Clos/">
-                <img src="/img/Clos/0_cover.jpg" class="thumb-img">
-                <div class="overlay">
-                    <img src="/img/Clos/clos-hover.gif" alt="" class="thumb-img-hover">
-                    <div class="index-project">Clos</div>
-                    <div class="type-text">branding</div>
-                    <div class="info-text">2017</div>
-                    <div class="index-arrow">explore &#10230;</div>
-                </div>
-            </a>
-        </div>
-        <!--TYPE-->
-        <div class="m-b" id="selected_type_works">
-            <a href="design/TypeWorks/">
-                <img src="/img/Type/cover_type.jpg" class="thumb-img">
-                <div class="overlay">
-                    <img src="/img/Type/cover.gif" alt="" class="thumb-img-hover">
-                    <div class="index-project">Selected Type Works</div>
-                    <div class="type-text">graphic design</div>
-                    <div class="info-text">2017</div>
-                    <div class="index-arrow">explore &#10230;</div>
-                </div>
-            </a>
-        </div>
+    <section class="hero-wrapper" style="padding-top: 0; height: 88vh;">
+        <div class="main-bio" style="transform: translateY(0%) translateZ(0px)">
+            <div><img class="grid-item-a" style="max-width: 240px" src="img/Logo_black.png"></div>
+            <p class="body-text-big">I'm Alessandro, a communication designer and illustrator based in Milan. My <a href="/design/">work</a> focuses on visual identities, art direction, animation and <a href="/illustration/">illustration</a>. <br>I’m currently working at <a href="https://www.150up.com/">150UP</a>. </p>
+            <p class="body-text">&#127911 <i>Supernatural</i> by NewJeans</p>
+        </div>             
     </section>
-        <footer>
-            <div class="foot">
-                <ul class="footer-text">
-                    <li class="footer-back">©2023. All rights reserved.</li>
-                    <li class="footer-contact"><a href="mailto:aleferrarss@gmail.com?Subject=Hello" target="_top">say hi</a></li>
-                </ul>
-            </div>
-        </footer>
+    <footer>
+        <div class="foot">
+            <ul class="footer-text">
+                <li class="footer-back">©2025. All rights reserved.</li>
+                <li class="footer-contact"><a href="mailto:aleferrarss@gmail.com?Subject=Hello" target="_top">say hi</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

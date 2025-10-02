@@ -14,7 +14,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/script/script.js"></script>
     <!-- Masonry -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <!--Images loaded-->
@@ -29,8 +28,14 @@
     <header>
         <nav id="myTopnav" class=navbar>
             <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
                 <ul id="navi" class="menu-items">
-                    <li><a href="/">Design</a></li>
+                    <li><a href="/design/">Design</a></li>
                     <li><a href="/illustration/">Illustration</a></li>
                     <li><a href="/about/">About</a></li>
                 </ul>
@@ -39,76 +44,86 @@
                 </div>
             </div>
         </nav>
-        <!-- mobile -->
-        <span class="mobile-menu" onclick="openNav()">&#9776;</span>
-        <nav class="mobile-nav" id="myNav">
-            <div class=navbar>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="mobile-link-list">
-                    <a href="/" class="mobile-link">design</a>
-                    <a href="/illustration/" class="mobile-link">illustration</a>
-                    <a href="/about/" class="mobile-link">about</a>
-                    <a href="https://www.instagram.com/_phephra/" class="mobile-link">instagram</a>
-                    <a href="mailto:aleferrarss@gmail.com?Subject=Hello" target="_top" class="mobile-link">contact</a>
-                </div>
-            </div>
-        </nav>
     </header>
+    <section class="hero-wrapper">
+        <div style="padding:50% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/239422242?title=0&byline=0&portrait=0&autoplay=1&loop=1&autopause=0?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&background=1&?muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Help Center Video" class="hero-img"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <div class="scroll-down blink-me">
+            <p class="scroll-down-text">scroll down</p>
+        </div>
+    </section>
     <section class="page-wrapper">
-        <div class="project-about">
-            <div class="fix">
+        <div class="project-about" id="sidebar">
+            <div class="project-info">
                 <h1 class="title-text">Clos</h1>
-                <p class="body-text">Clos is an experimental fictional brand, developed as final BA project. The aim of the project was to create a realistic brand for an irrealistic purpouse. We were assigned the task of giving life to an anonymous everyday object, creating a brand from scratch for it and expressing its values through various touchpoints. And thus we designed Clos, an American based clothespin brand from Vermont with a warm, friendly and witty identity, which seeks to bring harmony and warmth to the domestic environment, giving colour to the tedious activity of laundry and household care. Clos is built around the core value "close to you", payoff of the brand. Particular care was taken in designing the packages, the main touchpoint of the brand with the customer, and the Closmatics, automatic vending machines for clothespins, in order to give a 360 degrees emotional brand experience.</p>
-                <p class="body-text team-title">Together with</p>
-                <ul class="body-text team">
-                    <li>Francesca Bortolotto</li> 
-                    <li>Federico Gambarana</li>
-                    <li>Lorenzo Marchesi</li>
-                    <li>Arianna Meroni</li>
-                </ul>
+                <p class="subtitle-text">2016-2017&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspGraphic design & programming</p>
+                <p class="body-text">As final BA project the task was to create a realistic brand for an irrealistic purpose. Clos is a clothespin brand with a warm, friendly and witty identity which seeks to bring coziness to the house, colouring the tedious activity of laundry. Built around the core value "close to you", particular care was taken in designing the customer experience through the packaging and vending machines. Using Arduino and Processing, we built a working prototype of a musical arcade game as our "brand communication machine": using a keyboard made of clothespins as a controller the users are able to play Pachelbel's <i>Canon</i> while catching clothes for the laundry. Clos was showcased at <a href="http://whatif.labsintesi-c1.info/" target="_blank">What If</a>, exhibition held in March 2017.</p>
+                <p class="spec-title-text">Credits</p>
+                <p class="spec-text">University project</br>Together with Francesca Bortolotto, Federico Gambarana, Lorenzo Marchesi, Arianna Meroni</p>
             </div>
         </div>
-        <div class="a">
-            <img class="page-img" src="/img/Clos/0_cover.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Clos/1_clothespin.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Clos/8.2_packaging.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Clos/8.3_packaging.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Clos/8.1_packaging.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Clos/8.4_packaging.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Clos/8.5_packaging.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Clos/brochure_1.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Clos/9_Distributore.jpg">
-        </div>
-        <div class="a">
-            <video autoplay muted loop class="page-img">
-                <source src="/img/Clos/clos_website.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <div class="project-images">
+            <div class="a">
+                <img class="page-img" src="/img/Clos/0_cover.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Clos/1_clothespin.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Clos/8.2_packaging.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Clos/8.3_packaging.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Clos/8.1_packaging.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Clos/8.4_packaging.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Clos/8.5_packaging.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Clos/brochure_1.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Clos/9_Distributore.jpg">
+            </div>
+            <div class="a">
+                <video autoplay muted loop class="page-img">
+                    <source src="/img/Clos/clos_website.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Clos/14.6_macchina.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Clos/14.2_macchina.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Clos/14.3_macchina.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Clos/14.5_macchina.jpg">
+            </div>
+            <div class="a">
+                <!-- VIDEO INTERACTION -->
+            </div>
+            <div class="a">
+                <!-- VIDEO BACKSTAGE -->
+                <div style="padding:56.25% 0 0 0;position:relative;" class="page-img"><iframe src="https://player.vimeo.com/video/236926965?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
         </div>
     </section>
     <footer>
         <div class="foot">
             <ul class="footer-text">
-                <li class="footer-back">©2023. All rights reserved.</li>
+                <li class="footer-back">©2024. All rights reserved.</li>
                 <li class="footer-contact"><a href="mailto:aleferrarss@gmail.com?Subject=Hello" target="_top">say hi</a></li>
             </ul>
         </div>
-    </footer>   
+    </footer>
+    <script src="/script/script.js"></script>   
 </body>
 </html>

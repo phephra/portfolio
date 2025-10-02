@@ -14,7 +14,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/script/script.js"></script>
     <!-- Masonry -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <!--Images loaded-->
@@ -29,8 +28,14 @@
     <header>
         <nav id="myTopnav" class=navbar>
             <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
                 <ul id="navi" class="menu-items">
-                    <li><a href="/">Design</a></li>
+                    <li><a href="/design/">Design</a></li>
                     <li><a href="/illustration/">Illustration</a></li>
                     <li><a href="/about/">About</a></li>
                 </ul>
@@ -39,82 +44,75 @@
                 </div>
             </div>
         </nav>
-        <!-- mobile -->
-        <span class="mobile-menu" onclick="openNav()">&#9776;</span>
-        <nav class="mobile-nav" id="myNav">
-            <div class=navbar>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="mobile-link-list">
-                    <a href="/" class="mobile-link">design</a>
-                    <a href="/illustration/" class="mobile-link">illustration</a>
-                    <a href="/about/" class="mobile-link">about</a>
-                    <a href="https://www.instagram.com/_phephra/" class="mobile-link">instagram</a>
-                    <a href="mailto:aleferrarss@gmail.com?Subject=Hello" target="_top" class="mobile-link">contact</a>
-                </div>
-            </div>
-        </nav>
     </header>
+    <section class="hero-wrapper">
+        <div class="hero-img">
+            <img class="hero-img" src="/img/Dotdotdot/ddd_showcase.gif">
+        </div>
+        <div class="scroll-down blink-me">
+            <p class="scroll-down-text">scroll down</p>
+        </div>
+    </section>
     <section class="page-wrapper">
-        <div class="project-about">
-            <div class="fix">
+        <div class="project-about" id="sidebar">
+            <div class="project-info">
                 <h1 class="title-text">Dot Dot Dot magazine</h1>
+                <p class="subtitle-text">2018&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEditorial design & art direction</p>
                 <p class="body-text">Dot Dot Dot was an iconic independent design journal of the past. During the Editorial Design Studio held by Massimo Pitis, the task was to to give the magazine a new flesh, designing a new fictional issue.
-                    The magazine was given a new strategic positioning, structure and tone of voice. The new Dot Dot Dot focuses on open contemporary culture, encompassing different narrative styles and borrowing articles, essays and projects both from estabilished authors and people who answer an open call. With its content flowing metaphorically like a musical composition, the first issue focuses on the theme "Revive". Dot Dot Dot Radio is a transmedia extension of the magazine: accessible and democratic, the web radio was deemed as the right choice to spread the magazine's culture pills to a wider audience.</p>
-                <p class="body-text team-title">Together with</p>
-                <ul class="body-text team">
-                    <li>Giacomo Bevacqua</li> 
-                    <li>Giulia Cortinovis</li>
-                    <li>Daniele Mapelli</li>
-                    <li>Stefano Pisana</li>
-                </ul>
+                    The new Dot Dot Dot focuses on open contemporary culture, encompassing different narrative styles. With its content flowing like a musical composition, the first issue focuses on the theme "Revive". A transmedia extension of the printed magazine, Dot Dot Dot Radio, was also created.</p>
+                <p class="spec-title-text">Credits</p>
+                    <li></li>
+                <p class="spec-text">University project</br>Together with Giacomo Bevacqua, Giulia Cortinovis, Daniele Mapelli, Stefano Pisana</p>
             </div>
         </div>
-        <div class="a">
-            <img class="page-img" src="/img/Dotdotdot/cover.jpg">
+        <div class="project-images">
+            <div class="a">
+                <img class="page-img" src="/img/Dotdotdot/cover.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Dotdotdot/copertina%20e%20retro%20zenitali.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Dotdotdot/2.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Dotdotdot/3.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Dotdotdot/4.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Dotdotdot/10.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Dotdotdot/6.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Dotdotdot/7.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Dotdotdot/8.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Dotdotdot/ddd_showcase_sessions.gif">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Dotdotdot/front-back-pattern.jpg">
+            </div>
+            <div class="a">
+                <div style="padding:56.25% 0 0 0;position:relative;" class="page-img"><iframe src="https://player.vimeo.com/video/286349755?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
         </div>
-        <div class="a">
-            <img class="page-img" src="/img/Dotdotdot/copertina%20e%20retro%20zenitali.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Dotdotdot/ddd_showcase.gif">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Dotdotdot/2.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Dotdotdot/3.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Dotdotdot/4.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Dotdotdot/10.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Dotdotdot/6.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Dotdotdot/7.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Dotdotdot/8.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Dotdotdot/ddd_showcase_sessions.gif">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Dotdotdot/front-back-pattern.jpg">
-        </div>
-        <div style="padding:56.25% 0 0 0;position:relative;" class="a"><iframe src="https://player.vimeo.com/video/286349755?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-        <script src="https://player.vimeo.com/api/player.js"></script>
     </section>
     <footer>
         <div class="foot">
             <ul class="footer-text">
-                <li class="footer-back">©2023. All rights reserved.</li>
+                <li class="footer-back">©2024. All rights reserved.</li>
                 <li class="footer-contact"><a href="mailto:aleferrarss@gmail.com?Subject=Hello" target="_top">say hi</a></li>
             </ul>
         </div>
-    </footer>   
+    </footer>
+    <script src="/script/script.js"></script>  
 </body>
 </html>

@@ -14,7 +14,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/script/script.js"></script>
     <!-- Masonry -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <!--Images loaded-->
@@ -25,13 +24,18 @@
     <script>
         document.body.className += ' fade-out';
     </script>
-     <!-- HEADER -->
     <!-- HEADER -->
     <header>
         <nav id="myTopnav" class=navbar>
             <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
                 <ul id="navi" class="menu-items">
-                    <li><a href="/">Design</a></li>
+                    <li><a href="/design/">Design</a></li>
                     <li><a href="/illustration/">Illustration</a></li>
                     <li><a href="/about/">About</a></li>
                 </ul>
@@ -40,51 +44,43 @@
                 </div>
             </div>
         </nav>
-        <!-- mobile -->
-        <span class="mobile-menu" onclick="openNav()">&#9776;</span>
-        <nav class="mobile-nav" id="myNav">
-            <div class=navbar>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="mobile-link-list">
-                    <a href="/" class="mobile-link">design</a>
-                    <a href="/illustration/" class="mobile-link">illustration</a>
-                    <a href="/about/" class="mobile-link">about</a>
-                    <a href="https://www.instagram.com/_phephra/" class="mobile-link">instagram</a>
-                    <a href="mailto:aleferrarss@gmail.com?Subject=Hello" target="_top" class="mobile-link">contact</a>
-                </div>
-            </div>
-        </nav>
     </header>
     <section class="page-wrapper">
-        <div class="project-about">
-            <div class="fix">
+        <div class="project-about" id="sidebar">
+            <div class="project-info">
                 <h1 class="title-text">Selected Type Works</h1>
-                <p class="body-text">This a selection of works created during the Advanced Typography course at Lahti University of Applied Sciences. The aim of the classes was to produce short assignments, created in 24 hours, playing with typography in an advanced way - experimenting with styles and at the same time focusing on its neat usage in more classical solutions. All the posters are A4 size.</p>
+                <p class="subtitle-text">2017&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspGraphic design</p>
+                <p class="body-text">A selection of posters created during the Advanced Typography course at Lahti University of Applied Sciences. The aim of the classes was to produce short 24 hour assignments that focused on typography, experimenting with styles.</p>
+                <p class="spec-title-text">Credits</p>
+                <p class="spec-text">University project</p>
             </div>
         </div>
-        <div class="a">
-            <img class="page-img" src="/img/Type/1.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Type/2.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Type/3.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Type/4.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/Type/5.jpg">
+        <div class="project-images" loading="lazy">
+            <div class="a" style="padding-top:6rem">
+                <img class="page-img" src="/img/Type/1.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Type/2.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Type/3.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Type/4.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/Type/5.jpg">
+            </div>
         </div>
     </section>
     <footer>
         <div class="foot">
             <ul class="footer-text">
-                <li class="footer-back">©2023. All rights reserved.</li>
+                <li class="footer-back">©2024. All rights reserved.</li>
                 <li class="footer-contact"><a href="mailto:aleferrarss@gmail.com?Subject=Hello" target="_top">say hi</a></li>
             </ul>
         </div>
-    </footer>   
+    </footer>
+    <script src="/script/script.js"></script>   
 </body>
 </html>

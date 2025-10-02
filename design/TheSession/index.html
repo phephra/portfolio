@@ -14,7 +14,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/script/script.js"></script>
     <!-- Masonry -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <!--Images loaded-->
@@ -25,13 +24,18 @@
     <script>
         document.body.className += ' fade-out';
     </script>
-     <!-- HEADER -->
     <!-- HEADER -->
     <header>
         <nav id="myTopnav" class=navbar>
             <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
                 <ul id="navi" class="menu-items">
-                    <li><a href="/">Design</a></li>
+                    <li><a href="/design/">Design</a></li>
                     <li><a href="/illustration/">Illustration</a></li>
                     <li><a href="/about/">About</a></li>
                 </ul>
@@ -40,57 +44,54 @@
                 </div>
             </div>
         </nav>
-        <!-- mobile -->
-        <span class="mobile-menu" onclick="openNav()">&#9776;</span>
-        <nav class="mobile-nav" id="myNav">
-            <div class=navbar>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="mobile-link-list">
-                    <a href="/" class="mobile-link">design</a>
-                    <a href="/illustration/" class="mobile-link">illustration</a>
-                    <a href="/about/" class="mobile-link">about</a>
-                    <a href="https://www.instagram.com/_phephra/" class="mobile-link">instagram</a>
-                    <a href="mailto:aleferrarss@gmail.com?Subject=Hello" target="_top" class="mobile-link">contact</a>
-                </div>
-            </div>
-        </nav>
     </header>
-    <section class="page-wrapper">
-        <div class="project-about">
-            <div class="fix">
-                <h1 class="title-text">The Session</h1>
-                <p class="body-text"><i>The Session</i> is a fictional digital magazine for iPad created as a demonstration for my students at the Computer Graphic 2 – InDesign class  at IED. Aimed at music geeks and connosseurs, the magazine adapts articles found on <a href="https://www.redbullmusicacademy.com/">Red Bull Music Academy</a>, the issue at hand focusing on influential Japanese musicians.</p>
-            </div>
+    <section class="hero-wrapper">
+        <div class="hero-img">
+            <img class="hero-img" src="/img/TheSession/TS_0.jpg">
         </div>
-        <div class="a">
-            <img class="page-img" src="/img/TheSession/TS_0.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/TheSession/TS_1.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/TheSession/TS_2.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/TheSession/TS_3.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/TheSession/TS_4.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/TheSession/TS_5.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/TheSession/TS_6.jpg">
-        </div>
-        <div class="a">
-            <img class="page-img" src="/img/TheSession/TS_7.jpg">
+        <div class="scroll-down blink-me">
+            <p class="scroll-down-text">scroll down</p>
         </div>
     </section>
+    <section class="page-wrapper">
+        <div class="project-about" id="sidebar">
+            <div class="project-info">
+                <h1 class="title-text">The Session</h1>
+                <p class="subtitle-text">2024&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEditorial design</p>
+                <p class="body-text"><i>The Session</i> is a fictional digital magazine for iPad created as a demonstration for my students at the Computer Graphic 2 – InDesign class  at IED. Aimed at music geeks and connosseurs, the magazine adapts articles found on <a href="https://www.redbullmusicacademy.com/">Red Bull Music Academy</a>, the issue at hand focusing on influential Japanese musicians.</p>
+                <p class="spec-title-text">Credits</p>
+                <p class="spec-text">Personal project</p>
+            </div>
+        </div>
+        <div class="project-images" loading="lazy">
+            <div class="a">
+                <img class="page-img" src="/img/TheSession/TS_1.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/TheSession/TS_2.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/TheSession/TS_3.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/TheSession/TS_4.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/TheSession/TS_5.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/TheSession/TS_6.jpg">
+            </div>
+            <div class="a">
+                <img class="page-img" src="/img/TheSession/TS_7.jpg">
+            </div>
+        </div>
+    </section>
+    <script src="/script/script.js"></script>
     <footer>
         <div class="foot">
             <ul class="footer-text">
-                <li class="footer-back">©2023. All rights reserved.</li>
+                <li class="footer-back">©2024. All rights reserved.</li>
                 <li class="footer-contact"><a href="mailto:aleferrarss@gmail.com?Subject=Hello" target="_top">say hi</a></li>
             </ul>
         </div>
