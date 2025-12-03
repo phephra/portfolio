@@ -35,22 +35,6 @@
         });       
     });
 
-    // cursore
-document.body.onmousemove = function(e) {
-  document.documentElement.style.setProperty (
-    '--x', (
-      e.clientX+window.scrollX
-    )
-    + 'px'
-  );
-  document.documentElement.style.setProperty (
-    '--y', (
-      e.clientY+window.scrollY
-    ) 
-    + 'px'
-  );
-}
-
     function openNav() {
         document.getElementById("myNav").style.opacity = "1";
         document.getElementById("myNav").style.width = "100%";
