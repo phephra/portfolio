@@ -8,9 +8,6 @@
             if ($(window).width() < 600) {
                 $('.thumb-img-hover').remove();
             }
-            if ($(window).width() < 600) {
-                $('#myTopnav').remove();
-            }
             if ($(window).width() > 600) {
                 $('.mobile-nav').remove();
             }
