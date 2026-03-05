@@ -8,12 +8,14 @@
 
 @font-face {
     font-family: "Sans-Regular";
-    src: url("/fonts/HKGrotesk-Regular.otf");
+    src: url("/fonts/ApfelGrotezk-Regular.otf");
+    letter-spacing: 1%;
 }
 
 @font-face {
     font-family: "Sans-Bold";
-    src: url("/fonts/HKGrotesk-Bold.otf");
+    src: url("/fonts/ApfelGrotezk-Fett.otf");
+    letter-spacing: 1%;
 }
 
 @font-face {
@@ -28,7 +30,7 @@
 }
 
 .black {
-    color: #000000 !important;
+    color: #4a1711 !important;
 }
 
 .gray {
@@ -121,9 +123,9 @@ header {
 }
 
 .navbar {
-    overflow: hidden;
+    overflow: visible;
     height: 5rem;
-    background-color: #ffffff;
+    background-color: white;
     position: fixed;
     width: 100%;
     z-index: 50 !important;
@@ -156,37 +158,42 @@ header ul {
 
 header ul li a {
     text-decoration: none;
-    color: black;
+    color: #4a1711;
 }
 
 ul#navi li {
-    padding-left: 2rem;
+    padding-left: 2.2rem;
     font-family: "Sans-Regular", sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
-    color: black;
+    color: #4a1711;
 }
 
 .menu-items {
-    order: 2;
+    order: 3;
     display: flex;
 }
 
 .phephra {
     order: 1;
-    font-family: "Sans-Regular", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
+    display: flex;
+    padding-top: 1rem;
+}
+
+.phephra img {
+  height: 32px;
+  width: auto;
+  display: block;
 }
 
 .phephra a {
     text-decoration: none;
-    color: black;
+    color: #4a1711;
 }
 
 .navbar a:hover {
     text-decoration: line-through;
-    color: black !important;
+    color: #4a1711 !important;
 }
 
 /* WRAPPERS */
@@ -312,10 +319,10 @@ ul#navi li {
     bottom: 0;
     left: 0;
     right: 0;
-    max-height: 100%;
+    height: 100%;
     width: 100%;
     opacity: 0;
-    background-color: #000000;
+    background-color: #4a1711;
 }
 
 .index-project:hover {
@@ -338,10 +345,19 @@ ul#navi li {
     height: 5rem;
 }
 
+.foot-home {
+    position: absolute;
+    bottom: 0;
+}
+
 footer ul {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 1.8rem;
     padding-bottom: 0.8rem;
+    margin: 0;
+    list-style: none;
 }
 
 footer li.footer-back {
@@ -360,7 +376,7 @@ footer li a {
 
 footer li a:hover {
     text-decoration: line-through;
-    color: black !important;
+    color: #4a1711 !important;
 }
 
 /* PAGE BLOCKS */
@@ -425,7 +441,7 @@ footer li a:hover {
 
 .bio-links-button {
     position: relative;
-    background-color: #000000;
+    background-color: #4a1711;
     border-radius: 15px;
     height: 2.6rem;
     width: 8rem;
@@ -451,10 +467,8 @@ footer li a:hover {
 .main-bio {
     position: relative;
     grid-column: 1;
-    background-color: #ffffff;
     padding-left: 2.2rem;
     padding-right: 2.2rem;
-    padding-top: 10vh;
     margin-left: 0rem;
     width: 50%;
 }
@@ -559,7 +573,7 @@ footer li a:hover {
     vertical-align: top;
     position: absolute;
     opacity: 0;
-    background-color: black;
+    background-color: #4a1711;
     top: 0;
     left: 0;
     z-index: 999;
@@ -618,7 +632,7 @@ video {
     height: 1px;
     width: 100%;
     border-radius: 10px;
-    background: #000000;
+    background: #4a1711;
     position: relative;
 }
 
@@ -628,46 +642,48 @@ video {
     font-family: "Sans-Regular", sans-serif;
     font-size: 3rem;
     font-weight: 500;
-    color: black;
+    color: #4a1711;
     line-height: 3.2rem;
     max-width: 80%;
     padding-top: 6rem;
     padding-bottom: 0rem;
     margin-top: 0;
     margin-bottom: 0;
+    letter-spacing: 1%;
 }
 
 .title-text-M {
     font-family: "Sans-Regular", sans-serif;
     font-size: 2.5rem;
     font-weight: 500;
-    color: black;
+    color: #4a1711;
     line-height: auto;
     max-width: 80%;
     margin-top: 0;
     margin-bottom: 0;
+    letter-spacing: 1%;
 }
 
 .subtitle-text{
     font-family: "Sans-Regular", sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    color: black;
+    color: #4a1711;
     line-height: auto;
     padding-top: 0.5rem;
     margin-bottom: 0rem;
     margin-top: 0.7rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1%;
 }
 
 .body-text {
     font-family: "Sans-Regular", sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
-    color: #2c2c2c;
+    color: #4a1711;
     line-height: 1.6rem;
-    letter-spacing: auto;
+    letter-spacing: 1%;
     margin-top: 0.5rem;
 }
 
@@ -675,18 +691,18 @@ video {
     font-family: "Sans-Regular", sans-serif;
     font-size: 2rem;
     font-weight: 400;
-    color: #2c2c2c;
+    color: #4a1711;
     line-height: auto;
-    letter-spacing: auto;
+    letter-spacing: 1%;
 }
 
 .spec-title-text {
     font-family: "Sans-Regular", sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
-    color: #2c2c2c;
+    color: #4a1711;
     line-height: 1.6rem;
-    letter-spacing: 1px;
+    letter-spacing: 1%;
     text-transform: uppercase;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -696,9 +712,9 @@ video {
     font-family: "Sans-Regular", sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    color: #2c2c2c;
+    color: #4a1711;
     line-height: 1.4rem;
-    letter-spacing: auto;
+    letter-spacing: 1%;
     margin-top: 0;
 }
 
@@ -706,9 +722,9 @@ video {
     font-family: "Sans-Regular", sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
-    color: #2c2c2c;
+    color: #4a1711;
     line-height: 1.6rem;
-    letter-spacing: auto;
+    letter-spacing: 1%;
     margin-top: 1.5rem;
 }
 
@@ -716,9 +732,9 @@ video {
     font-family: "Sans-Regular", sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
-    color: #2c2c2c;
+    color: #4a1711;
     line-height: 1.8rem;
-    letter-spacing: auto;
+    letter-spacing: 1%;
 }
 
 .team-title {
@@ -730,7 +746,7 @@ video {
     line-height: 1.4rem;
     max-width: 50%;
     text-transform: uppercase;
-    letter-spacing: 0.02rem;
+    letter-spacing: 1%;
 }
 
 .team {
@@ -742,9 +758,10 @@ video {
     max-width: 50%;
     margin-top: 0;
     margin-bottom: 0;
+    letter-spacing: 1%;
 }
 .scroll-down {
-    background-color: #000000;
+    background-color: #4a1711;
     opacity: 0.5;
     position: absolute;
     bottom: 1rem;
@@ -754,6 +771,7 @@ video {
     border-radius: 15px;
     height: 2rem;
     width: 7rem;
+    letter-spacing: 1%;
 }
 
 .scroll-down-text {
@@ -766,6 +784,7 @@ video {
     left: 0;
     right: 0;
     bottom: -0.7rem;
+    letter-spacing: 1%;
 }
 
 .bio-links-text {
@@ -778,6 +797,7 @@ video {
     bottom: -0.6rem;
     left: 0;
     right: 0;
+    letter-spacing: 1%;
 }
 
 .bio-links-text a {
@@ -791,37 +811,41 @@ video {
     font-family: "Sans-Regular", sans-serif;
     font-size: 1rem;
     line-height: 1.4rem;
+    letter-spacing: 1%;
 }
 
 .bio-text {
     font-family: "Sans-Regular", sans-serif;
     font-size: 2rem;
-    color: black;
+    color: #4a1711;
     line-height: 2.4rem;
     padding-top: 0rem;
     margin-top: 0rem;
+    letter-spacing: 1%;
 }
 
 .bio-text-res {
     font-family: "Sans-Regular", sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
-    color: black;
+    color: #4a1711;
     line-height: 1.6rem;
     padding-top: 0rem;
     margin-top: 0rem;
     margin-bottom: 3rem;
+    letter-spacing: 1%;
 }
 
 .bio-title-text {
     font-family: "Sans-Regular", sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
-    color: black;
+    color: #4a1711;
     line-height: 1.6rem;
     padding-top: 0rem;
     margin-top: 0rem;
     margin-bottom: 0.8rem;
+    letter-spacing: 1%;
 }
 
 .index-project-text {
@@ -835,6 +859,7 @@ video {
     color: white;
     line-height: auto;
     text-decoration: none;
+    letter-spacing: 1%;
 }
 
 .index-arrow {
@@ -849,7 +874,7 @@ video {
     line-height: auto;
     text-decoration: none;
     transition: all .2s ease-in-out;
-    letter-spacing: 1px;
+    letter-spacing: 1%;
 }
 
 .index-arrow:hover {
@@ -868,7 +893,7 @@ video {
     color: #fff;
     line-height: normal;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1%;
 }
 
 .type-text {
@@ -882,7 +907,7 @@ video {
     color: #fff;
     line-height: normal;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1%;
 }
 
 
@@ -890,7 +915,7 @@ video {
 
 a {
     text-decoration: underline;
-    color: black;
+    color: #4a1711;
 }
 
 a:hover {
@@ -1034,6 +1059,11 @@ a img {
         height: 4rem;
     }
 
+    .navbar {
+        height: 5rem;
+        background-color: transparent;
+    }
+
     .navbar-container{
         display: block;
         position: fixed;
@@ -1076,7 +1106,7 @@ a img {
         height: 4px;
         width: 100%;
         border-radius: 10px;
-        background: #000000;
+        background: #4a1711;
     }
     
     .navbar-container .hamburger-lines .line1{
@@ -1192,7 +1222,7 @@ a img {
         left: 0;
         right: 0;
         top: 0;
-        color: black;
+        color: #4a1711;
         width: 100%;
     }
 
@@ -1223,7 +1253,7 @@ a img {
         left: 0;
         right: 0;
         top: 0;
-        color: black;
+        color: #4a1711;
         font-size: 0.8rem;
     }
 
@@ -1430,7 +1460,7 @@ a img {
 
 .bio-links-button {
     position: relative;
-    background-color: #000000;
+    background-color: #4a1711;
     border-radius: 15px;
     height: 2.6rem;
     width: 8rem;
