@@ -235,7 +235,7 @@ ul#navi li {
 
 .main-wrapper {
     position: relative;
-    padding-top: 2rem;
+    padding-top: 5.2rem;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 0rem;
@@ -896,6 +896,20 @@ video {
     letter-spacing: 1%;
 }
 
+.client-text {
+    position: absolute;
+    right: 2rem;
+    bottom: 1.5rem;
+    text-decoration: none;
+    font-family: "Sans-Regular", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 1%;
+}
+
 .type-text {
     position: absolute;
     left: 2rem;
@@ -1247,6 +1261,17 @@ a img {
         padding-bottom: 0.8rem;
     }
 
+    .clent-text {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        color: #bababa;
+        font-size: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
     .index-arrow {
         position: relative;
         bottom: 0;
@@ -1274,7 +1299,7 @@ a img {
 
     .main-wrapper {
         width: 100%;
-        padding-top: 2rem;
+        padding-top: 4.2rem;
         position: relative;
         grid-template-columns: 1fr;
         padding-left: 0.5rem;
